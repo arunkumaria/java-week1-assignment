@@ -15,6 +15,6 @@ public class Transaction {
 
 	@Override
 	public String toString() {
-		return type + " of " + amount + " at " + timestamp;
+		return type + " of Rs." + amount + " at " + timestamp;
 	}
 }
