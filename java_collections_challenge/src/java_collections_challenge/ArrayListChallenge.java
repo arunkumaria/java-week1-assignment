@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class ArrayListChallenge {
 	private ArrayList<String> items = new ArrayList<>();
+	private InputHandler inputHandler = new InputHandler();
 	private Scanner sc;
 
 	public ArrayListChallenge(Scanner sc) {
@@ -21,9 +22,7 @@ public class ArrayListChallenge {
 			System.out.println("5. Display Items");
 			System.out.println("6. Back to Main Menu");
 
-			System.out.print("Enter your choice:");
-			int choice = sc.nextInt();
-			sc.nextLine();
+			int choice = inputHandler.getInt("Enter your choice:");
 
 			switch (choice) {
 			case 1:
