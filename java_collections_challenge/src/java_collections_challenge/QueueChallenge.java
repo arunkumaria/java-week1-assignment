@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class QueueChallenge {
 	private Queue<String> queue = new LinkedList<>();
 	private Scanner sc;
+	InputHandler inputHandler = new InputHandler();
 
 	public QueueChallenge(Scanner sc) {
 		this.sc = sc;
@@ -21,9 +22,7 @@ public class QueueChallenge {
 			System.out.println("4. Display Queue");
 			System.out.println("5. Back to Main Menu");
 
-			System.out.print("Enter your choice:");
-			int choice = sc.nextInt();
-			sc.nextLine();
+			int choice = inputHandler.getInt("Enter your choice:");
 
 			switch (choice) {
 			case 1:

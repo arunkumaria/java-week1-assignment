@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class HashMapChallenge {
 	private HashMap<Integer, String> data = new HashMap<>();
 	private Scanner sc;
+	InputHandler inputHandler = new InputHandler();
 
 	public HashMapChallenge(Scanner sc) {
 		this.sc = sc;
@@ -22,9 +23,7 @@ public class HashMapChallenge {
 			System.out.println("5. Display Entries");
 			System.out.println("6. Back to Main Menu");
 
-			System.out.print("Enter your choice:");
-			int choice = sc.nextInt();
-			sc.nextLine();
+			int choice = inputHandler.getInt("Enter your choice:");
 
 			switch (choice) {
 			case 1:
