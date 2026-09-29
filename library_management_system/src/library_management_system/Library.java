@@ -8,7 +8,7 @@ public class Library {
 
 	public void addBook(Book book) {
 		books.add(book);
-		System.out.println("Book added successfully!");
+		System.out.println("Book added successfully to the library!");
 	}
 
 	public void viewBooks() {
